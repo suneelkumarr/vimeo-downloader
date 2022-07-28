@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "viemo": "^1.0.3",
-    "vimeo": "^2.1.1"
+    "viemo": "^1.0.3"
   }
 }
