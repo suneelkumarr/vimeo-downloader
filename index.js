@@ -5,6 +5,7 @@ function getIdFromVimeoURL(url) {
 
 async function vimeo(url) {
     const axios = require("axios"); // Importing the Axios module to make API requests
+    const { getVideoDurationInSeconds } = require("get-video-duration");
     const videoID =  getIdFromVimeoURL(url)
     finalUrl = `https://player.vimeo.com/video/${videoID}/config`
     const getData = await axios.get(finalUrl);
