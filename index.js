@@ -3,7 +3,7 @@ function getIdFromVimeoURL(url) {
     return /(vimeo(pro)?\.com)\/(?:[^\d]+)?(\d+)\??(.*)?$/.exec(url)[3];
   }
 
-async function vimeo(url) {
+module.exports = async function vimeo(url) {
     const axios = require("axios"); // Importing the Axios module to make API requests
     const { getVideoDurationInSeconds } = require("get-video-duration");
     const videoID =  getIdFromVimeoURL(url)
@@ -23,4 +23,3 @@ async function vimeo(url) {
     //   .send({ msg: "video downloaded url get", response: finalObj });
     return finalObj;
   };
-module.exports = vimeo
