@@ -21,5 +21,9 @@ Say what the step will be
 ```
 const vimeo = require('vimeo');
 
-const data =  vimeo("https://vimeo.com/731865515")
+ const getDetails = async function() {
+    const finalObj = await vimeo("https://vimeo.com/731865515")
+     console.log(finalObj)
+  }
+getDetails()
 ```

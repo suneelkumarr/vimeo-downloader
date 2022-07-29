@@ -27,9 +27,7 @@ const start = async (url) => {
 
 
   // Start function
-const vimeo = async function(url) {
+  module.exports = async function(url) {
     const result = await start(url)
     return result
   }
-
-module.exports = vimeo
