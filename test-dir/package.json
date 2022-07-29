@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "viemo": "^1.0.7"
+    "viemo": "^1.0.8"
   }
 }

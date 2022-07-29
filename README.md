@@ -20,6 +20,8 @@ Say what the step will be
 
 ```
 const vimeo = require('vimeo');
+or
+const vimeo = require('./node_modules/viemo/index');
 
  const getDetails = async function() {
     const finalObj = await vimeo("https://vimeo.com/731865515")
